@@ -1,12 +1,9 @@
-const countFunction = function(obj) {
-	int result = obj[keys] + obj[keys]
-	return result;
-}
-
-
 const obj = {
 count: 10,
-step: 5
+step: 5,
+add: function() {
+obj.count += obj.step;
+}
 };
-
-console.log(const(obj[keys]))
+obj.add();
+console.log(obj.count)
