@@ -1,0 +1,48 @@
+@font-face {
+    src: url(fonts/Cairo-Bold.ttf);
+    font-family: Cairo-Bold;
+}
+@font-face {
+    src: url(fonts/Cairo-Medium.ttf);
+    font-family: Cairo-Medium;
+}
+.header {
+
+
+}
+.footer {
+    padding: 0 20px;
+}
+.footer-leftContainer {
+    font-size: 19px;
+    color: black;
+    font-family: Cairo-Bold, serif;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.footer-span{
+    color: deepskyblue;
+}
+.footer-rightContainer {
+    display: flex;
+
+}
+.footer-title {
+    width: 59px;
+    height: 30px;
+    font-family: Cairo-Bold, serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #3F3F3F;
+}
+.footer-bottom {
+    font-size: 16px;
+    font-family: Cairo-Medium, serif;
+    color: #878787;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
