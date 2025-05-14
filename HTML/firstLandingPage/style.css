@@ -2,42 +2,221 @@
     src: url(fonts/Cairo-Bold.ttf);
     font-family: Cairo-Bold;
 }
+
 @font-face {
     src: url(fonts/Cairo-Medium.ttf);
     font-family: Cairo-Medium;
 }
+
+.body {
+    color: #4F4F4F;
+    margin: 0 auto;
+    max-width: 1318px;
+    border: 1px solid #999;
+    font-family: Cairo-SemiBold, serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
 .header {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #999;
+    padding: 15px 15px;
+    align-items: center;
+}
 
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
+    background-color: white;
+    list-style: none;
+    font-weight: 600;
+    font-family: Cairo-Medium, serif;
+}
+
+.navbar a{
+    margin: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: #4F4F4F;
+}
+
+.navbar a:hover {
+    color: dodgerblue;
+}
+
+.signup-button {
+    background-color: transparent;
+    border-color: #999;
+    border-style: outset;
+    border-width: 1px;
+    height: 44px;
+    width: 130px;
+    text-align: center;
+}
+
+.signup-button a{
+    color: #3F3F3F;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Cairo-Medium, serif;
+}
+
+.signup-button a:hover{
+    color: dodgerblue;
+}
+
+.main-content {
+    line-height: 100px;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 19px;
+    padding: 0 15px;
+}
+
+#main-header1 {
+    font-family: Cairo-Bold, serif;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 93px;
+    color: #242424;
+    top: auto;
+    height: 186px;
+}
+
+#main-header2 {
+    color: #3F3F3F;
+    line-height: 93px;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 19px;
+}
+
+.box1 {
+    height: 51px;
+    width: 374px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.box2 {
+    height: 51px;
+    width: 149px;
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 5px 5px #000;
+    justify-content: right;
+}
+
+.box2 a {
+    text-decoration: none;
+}
+
+.box2 a:hover {
+    color: black;
+}
+
+.main-firstContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-secondContainer {
+    font-weight: 600;
+    text-align: center;
+    margin: 100px;
 
 }
+
+#main-header3 {
+    font-family: Cairo-Medium, serif;
+    font-weight: 700;
+    color: #3F3F3F;
+    font-size: 44px;
+    letter-spacing: 0;
+    line-height: 100%;
+    margin-right: 200px;
+}
+
+#main-text1 {
+}
+
+
+
+
+
+
+
+
 .footer {
-    padding: 0 20px;
+    padding: 0 65px;
+    background-color: white;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-leftContainer {
     font-size: 19px;
-    color: black;
+    color: #242424;
     font-family: Cairo-Bold, serif;
     line-height: 36px;
     font-weight: 700;
     letter-spacing: 0;
+    justify-content: left;
+    top: 4018px;
+    left: 132px;
+    gap: 15px;
 }
+
 .footer-span{
     color: deepskyblue;
 }
-.footer-rightContainer {
-    display: flex;
 
+.footer-rightContainer {
+    font-size: 16px;
+    font-family: Cairo-Medium, serif;
+    line-height: 100px;
+    letter-spacing: 36px;
+    justify-content: right;
+    color: #3F3F3F;
+    top: 4018px;
+    display: flex;
+    left: 745px;
+    align-content: space-between;
 }
+
 .footer-title {
-    width: 59px;
-    height: 30px;
     font-family: Cairo-Bold, serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0;
     color: #3F3F3F;
+    margin: 50px;
 }
+
+.footer a {
+    text-decoration: none;
+    color: #4F4F4F;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: dodgerblue;
+}
+
 .footer-bottom {
     font-size: 16px;
     font-family: Cairo-Medium, serif;
@@ -45,4 +224,5 @@
     line-height: 100px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
