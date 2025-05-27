@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<main>
+    <aside id="search">
+        <input type="search" id="searchTask" placeholder="Search here" oninput="searchTasks()">
+    </aside>
+    <br><br>
+    <div class= "container">
+        <h2 id="header">To-Do List</h2><br>
+        <ul id="task-List"></ul>
+        <input type="text" id="addTask" placeholder="Add New To-Do">
+        <button onclick="addTask()">Add</button>
+        <p id="errorMessage">Invalid input</p>
+
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
