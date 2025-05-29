@@ -1,0 +1,39 @@
+body {
+
+}
+
+.section-hero {
+    background-color: #ebf2ff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px ;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    color: #063852;
+    padding-left: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: poppins, serif;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    justify-content: space-between;
+}
+.section-hero button {
+    border-radius: 100px;
+    margin-right: 20px;
+    background-color: #ebf2ff;
+}
