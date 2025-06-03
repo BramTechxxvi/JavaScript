@@ -1,19 +1,20 @@
-body {
-
-}
-
 .section-hero {
     background-color: #ebf2ff;
+    
+}
+
+#hero {
     display: flex;
     justify-content: space-between;
     padding-top: 20px ;
     align-items: center;
+    padding: 70px;
 }
+
 
 #header {
     display: flex;
     color: #063852;
-    padding-left: 100px;
     font-size: 22px;
     font-weight: 700;
     font-family: poppins, serif;
@@ -22,15 +23,23 @@ body {
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
     list-style: none;
-
+    display: flex;
+    gap: 20px ;
 }
 
 nav a {
     text-decoration: none;
-    justify-content: space-between;
+    color: black;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+nav a:hover {
+    color: blue;
+
 }
 .section-hero button {
     border-radius: 100px;
