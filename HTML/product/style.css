@@ -39,7 +39,7 @@
 .searchContainer {
     display: flex;
     justify-content: center;
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
 
 .searchContainer input {
@@ -52,9 +52,25 @@
     padding: 0px 30px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 .imagesContainer img {
-    width: 23%;
-    height: 50%;
+    width: 300px;
+    height: 400px;
 }
+
+.categoryAndPrice {
+    padding: 25px 0px 0px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.category{
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+

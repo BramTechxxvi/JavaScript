@@ -9,28 +9,40 @@ const imagesContainer = document.querySelector(".imagesContainer");
 //}
 const fetchProducts = async(url) => {
     try { 
-        const response = await fetch(url);
+        const response = await fetch(url);  
         const data = await response.json();
         displayProducts(data);
     } catch (error) {
-        console.log(error)
+        console.log("Fetch error " + error)
     }
 }
 
 fetchProducts(PRODUCT_URL);
 
 const displayProducts = (products) => {
-    imagesContainer.innerHTML = "";
     products.forEach((product) => {
         const {image, category, price} = product;
-       // const productCard = document.createElement("div");
-        imagesContainer.innerHTML += `
+        const productCard = document.createElement("div");
+        productCard.classList.add("categoryAndPrice")
+            //productCard.style.backgroundColor = ;
+        productCard.innerHTML = `
             <div>
             <img src="${image}" alt="">
-            <p>${category}</p>
-            <span>${price}</span>
+            <div class=category style="background-color: rgb(101, 101, 230)">
+            <p>${"category " + category}</p>
+            <span>${"price: " +price}</span>
             </div>
-            `;
+            </div>
+            `
+        imagesContainer.appendChild(productCard);
     })
 }
 
+function searchContainer() {
+    const query = document.querySelector("#search").value.toLowerCase();
+    const products = document.querySelectorAll(".categoryAndPrice");
+    products.forEach(product => {
+        const categoryInfo = product.querySelector("p").textContent.toLowerCase();
+        product.style.display = categoryInfo.includes(query) ? '' : "none";
+    })
+}
