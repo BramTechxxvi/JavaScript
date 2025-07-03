@@ -15,10 +15,6 @@ body {
     max-width: 600px;
 }
 
-#header {
-    text-align: center;
-}
-
 input {
     width: 500px;
     padding: 10px;

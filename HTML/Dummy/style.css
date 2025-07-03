@@ -3,13 +3,14 @@
     margin: 0;
 }
 
+
 .navBarContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 0px 70px;
-    background-color: rgb(101, 101, 230);
+    padding: 0px 30px;
+    background-color: #a8c70c;
     color: #ffffff;
 }
 
@@ -21,7 +22,7 @@
     flex-wrap: wrap;
 }
 .navLinks li {
-    margin: 8px;
+    margin: 15px;
 }
 .navLinks a{
     text-decoration: none;
@@ -30,6 +31,7 @@
 }
 
 .navLinks a:hover{
+    color: purple;
 }
 
 .signUp button {
@@ -38,6 +40,27 @@
     width: 100px;
     height: 30px;
     border: none;
+    cursor: pointer;
+}
+
+.sectionHero {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.catchWordContainer {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: poppins, serif;
+}
+
+.searchContainer input {
+    padding: 8px 25px 5px 5px;
+    outline: none;
+    width: 100%;
+    border-radius: 15px;
 }
 
 

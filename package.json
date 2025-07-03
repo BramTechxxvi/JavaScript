@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "jest": "^29.7.0",
+    "prompt": "^1.3.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "chinedu",
+  "version": "1.0.0",
+  "description": "\"# JavaScript\"",
+  "main": "NumberOccur.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BramTechxxvi/JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BramTechxxvi/JavaScript/issues"
+  },
+  "homepage": "https://github.com/BramTechxxvi/JavaScript#readme"
+}
