@@ -1,5 +1,4 @@
 import React from 'react'
-import { counterSlice } from './counterSlice';
 
 const Counter = ()=> {
     return (
