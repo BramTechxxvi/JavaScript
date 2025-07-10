@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { increment, decrement, incrementByAmount } from './counterSlice';
 import {useDispatch, useSelector} from 'react-redux'
+import { Link } from 'react-router';
 
 const Counter = ()=> {
     const [inputValue, setInputValue] = useState('');
