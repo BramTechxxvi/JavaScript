@@ -4,7 +4,10 @@ const Counter = ()=> {
     return (
         <div>
             <h1>count: 0</h1>
-            b
+            <div>
+                <button>+</button>
+                <button>-</button>
+            </div>
         </div>
     )
 }
