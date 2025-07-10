@@ -1,14 +1,14 @@
-import React, { userState } from 'react'
+import React, { useState } from 'react'
 import { increment, decrement, increaseByAmount } from './counterSlice';
 import {useDispatch, useSelector} from 'react-redux'
 
 const Counter = ()=> {
-    const [inputValue, setInputValue] = userState('');
+    const [inputValue, setInputValue] = useState('');
     const count = useSelector((state)=> state.counter.value)
     const dispatch = useDispatch();
     const inputNumber = (e)=> {
         if(e.key === 'Enter') {
-            const amount = parseInt
+            const amount = parseInt(inputValue)
             if(!isNaN(amount)) {
                 dispatch(increaseByAmount(amount))
                 setInputValue('')
