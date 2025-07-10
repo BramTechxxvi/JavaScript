@@ -21,7 +21,7 @@ const Counter = ()=> {
             <h1>count: {count}</h1>
             <div>
                 <input 
-                type="text" 
+                type="number" 
                 placeholder='Enter quantity' 
                 value={inputValue}
                 onChange={(e)=> setInputValue(e.target.value)}
@@ -30,6 +30,7 @@ const Counter = ()=> {
                 <button onClick={()=> dispatch(increment())}>+</button>
                 <button onClick={()=> dispatch(decrement())}>-</button>
             </div>
+            <Link to="../components/login"></Link>
         </div>
     )
 }
