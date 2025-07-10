@@ -1,4 +1,4 @@
- import { createBrowserRouter } from "react-router-dom";
+ import { createBrowserRouter } from "react-router";
 import SignUp from "../components/SignUp";
 import Login from "../components/Login";
 import Counter from "../feautures/counter/Counter";
