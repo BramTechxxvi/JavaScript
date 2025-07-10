@@ -1,9 +1,10 @@
-import Counter from "./feautures/counter/Counter"
+import { RouterProvider } from 'react-router'
+import router from './router/routes.jsx'
 
 function App() {
   return (
     <div>
-    <Counter />
+    <RouterProvider router={router} />
     </div>
   )
 }
