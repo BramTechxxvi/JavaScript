@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { increment, decrement, increaseByAmount } from './counterSlice';
+import { increment, decrement, incrementByAmount } from './counterSlice';
 import {useDispatch, useSelector} from 'react-redux'
 
 const Counter = ()=> {
@@ -10,7 +10,7 @@ const Counter = ()=> {
         if(e.key === 'Enter') {
             const amount = parseInt(inputValue)
             if(!isNaN(amount)) {
-                dispatch(increaseByAmount(amount))
+                dispatch(incrementByAmount(amount))
                 setInputValue('')
             }
         }
@@ -30,7 +30,8 @@ const Counter = ()=> {
                 <button onClick={()=> dispatch(increment())}>+</button>
                 <button onClick={()=> dispatch(decrement())}>-</button>
             </div>
-            <Link to="../components/login"></Link>
+            <Link to="../components/login">Login</Link>
+            <Link to="../components/signup">SignUp</Link>
         </div>
     )
 }
