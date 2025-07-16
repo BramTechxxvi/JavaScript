@@ -16,8 +16,7 @@ export const movieApi = createApi({
     getUpcomingMovies: builder.query({
       query: () => (`/upcoming?api_key=${apiKey}`),
     })
-  }),
-
-
-
+  })
 });
+
+export const { useGetPopularMoviesQuery, useGetTopRatedMoviesQuery, useGetUpcomingMoviesQuery } = movieApi;
