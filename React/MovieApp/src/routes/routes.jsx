@@ -4,4 +4,4 @@ const router = createBrowserRouter({
 
 })
 
-export default
+export default router
