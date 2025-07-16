@@ -3,6 +3,7 @@ import NavBar from "../components/navBar/NavBar";
 import SideBar from "../components/sideBar/SideBar";
 import MoviePage from "../components/moviePage/MoviePage";
 import Footer from '../components/footer/Footer';
+import { Outlet } from 'react-router';
 
 export const Layout = () => {
   return (
@@ -10,7 +11,7 @@ export const Layout = () => {
         <NavBar/>
         <div>
             <SideBar/>
-            <MoviePage/>
+            <Outlet/>
         </div>
         <Footer/>
     </div>

@@ -13,9 +13,13 @@ const router = createBrowserRouter([
     },
     {
         path: "/layout",
-        element: <Layout/>
+        element: <Layout/>,
         children: [
-            
+            {
+                path: "/layout/nowplaying",
+                element: <NowPlaying/>
+            }
+
         ]
     }
 ])
