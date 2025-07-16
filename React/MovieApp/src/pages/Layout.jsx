@@ -9,8 +9,10 @@ export const Layout = () => {
     <div>
         <NavBar/>
         <div>
-            
+            <SideBar/>
+            <MoviePage/>
         </div>
+        <Footer/>
     </div>
   )
 }
