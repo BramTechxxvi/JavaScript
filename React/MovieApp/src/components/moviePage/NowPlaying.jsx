@@ -8,7 +8,7 @@ export const Movie = () => {
   if (error) return <p>Something went wrong: {error.message}</p>;
   return (
     <div>
-      <h1>MoviePage</h1>
+      <h1>Now Playing</h1>
       <MovieCard data={data} />
     </div>  
   )
