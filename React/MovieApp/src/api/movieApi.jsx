@@ -22,4 +22,4 @@ export const movieApi = createApi({
   })
 });
 
-export const { useGetPopularMoviesQuery, useGetTopRatedMoviesQuery, useGetUpcomingMoviesQuery } = movieApi;
+export const { useGetNowPlayingQuery, useGetPopularMoviesQuery, useGetTopRatedMoviesQuery, useGetUpcomingMoviesQuery } = movieApi;
