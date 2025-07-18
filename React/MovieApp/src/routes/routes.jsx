@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Login from "../auth/login/Login";
 import SignUp from "../auth/signUp/SignUp";
 import Layout from "../pages/Layout/";
-import MovieCard from "../reuseables/MovieCard";
+import PopularMovies from "../components/moviePage/PopularMovies";
 
 export const router = createBrowserRouter([
     {
@@ -14,8 +14,8 @@ export const router = createBrowserRouter([
         element: <SignUp/>
     },
     {
-        path: "/moviecard",
-        element: <MovieCard/>
+        path: "/popularmovies",
+        element: <PopularMovies/>
     },
     {
         path: "/layout",
