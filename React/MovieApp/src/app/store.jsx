@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { setListeners } from "@reduxjs/toolkit/query";
-import { movieApi } from "../../api/movieApi";
+// import { setListeners } from "@reduxjs/toolkit/query";
+import { movieApi } from "../api/movieApi";
 
 export const store = configureStore({
   reducer: {
@@ -11,4 +11,4 @@ export const store = configureStore({
     }
 });
 
-setListeners(store.dispatch);
+// setListeners(store.dispatch);
