@@ -6,9 +6,9 @@ export const store = configureStore({
   reducer: {
     [movieApi.reducerPath]: movieApi.reducer,
   },
-    middleware: (getDefaultMiddleware) =>{
-        getDefaultMiddleware().concat(movieApi.middleware);
-    }
+    middleware: (getDefaultMiddleware) =>(
+        getDefaultMiddleware().concat(movieApi.middleware)
+    )
 });
 
 // setListeners(store.dispatch);

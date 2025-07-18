@@ -1,10 +1,12 @@
 import { createBrowserRouter } from "react-router";
 import Login from "../auth/login/Login";
-import Layout from "../pages/Layout";
+import SignUp from "../auth/signUp/SignUp";
+import Layout from "../pages/Layout/";
+import MovieCard from "../reuseables/MovieCard";
 
 export const router = createBrowserRouter([
     {
-        path: "/login",
+        path: "/",
         element: <Login/>
     },
     {
@@ -12,15 +14,19 @@ export const router = createBrowserRouter([
         element: <SignUp/>
     },
     {
+        path: "/moviecard",
+        element: <MovieCard/>
+    },
+    {
         path: "/layout",
         element: <Layout/>,
-        children: [
-            {
-                path: "/layout/nowplaying",
-                element: <NowPlaying/>
-            }
+        // children: [
+        //     {
+        //         path: "/layout/nowplaying",
+        //         element: <NowPlaying/>
+        //     }
 
-        ]
+        // ]
     }
 ])
 
