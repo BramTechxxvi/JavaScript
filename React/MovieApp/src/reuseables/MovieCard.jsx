@@ -9,16 +9,14 @@ export const MovieCard = () => {
 
     return (
         <div>
-           {
-             data?.results.map((result)=>(
-                  <div>
-                    <h1>
-                        <img src={`${imageUrl}${result.poster_path}`} alt="" />
+            {
+            data?.results.map((result)=>(
+            <div key={result.id}>
+                <img src={`${imageUrl}${result.poster_path}`} alt="" />
                         <p>{result.overview}</p>
                         <p>{result.title}</p>
                         <p>Rating: {result.vote_average}</p>
-                    </h1>
-                </div>
+            </div>
             ))
            }
         </div>
