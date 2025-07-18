@@ -39,6 +39,18 @@ export const router = createBrowserRouter([
             {
                 path: "/nowplaying",
                 element: <NowPlaying/>
+            },
+            {
+                path: "/popularmovies",
+                element: <PopularMovies/>
+            },
+            {
+                path: "/toprated",
+                element: <TopRated/>
+            },
+            {
+                path: "/upcoming",
+                element: <Upcoming/>
             }
 
         ]
