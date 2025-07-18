@@ -7,6 +7,9 @@ export const movieApi = createApi({
   reducerPath: "movieApi",
   baseQuery: fetchBaseQuery({ baseUrl: movieBaseUrl }),
   endpoints: (builder) => ({ 
+    getNowPlaying: builder.query({
+      query: ()=> (`/now_playing?api_key=${apiKey}`),
+    }),
     getPopularMovies: builder.query({
       query: () => (`/popupar?api_key=${apiKey}`),
     }),
