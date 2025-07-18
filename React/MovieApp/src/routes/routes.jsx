@@ -37,7 +37,7 @@ export const router = createBrowserRouter([
         element: <Layout/>,
         children: [
             {
-                path: "/layout/nowplaying",
+                path: "/nowplaying",
                 element: <NowPlaying/>
             }
 
