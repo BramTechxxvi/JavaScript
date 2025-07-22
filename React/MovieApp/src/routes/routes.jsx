@@ -37,19 +37,19 @@ export const router = createBrowserRouter([
         element: <Layout/>,
         children: [
             {
-                path: "/nowplaying",
+                path: "nowplaying",
                 element: <NowPlaying/>
             },
             {
-                path: "/popularmovies",
+                path: "popularmovies",
                 element: <PopularMovies/>
             },
             {
-                path: "/toprated",
+                path: "toprated",
                 element: <TopRated/>
             },
             {
-                path: "/upcoming",
+                path: "upcoming",
                 element: <Upcoming/>
             }
 
